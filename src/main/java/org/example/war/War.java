@@ -6,22 +6,34 @@ import org.example.vikins.Vikings;
 import java.util.ArrayList;
 
 public class War {
-    private ArrayList<> vikingArmy;
-    private ArrayList<> saxonArmy;
+    private ArrayList<Vikings> vikingArmy = new ArrayList<>();
+    private ArrayList<Saxon> saxonArmy = new ArrayList<>();
 
-    public ArrayList getVikingArmy() {
+    public ArrayList<Vikings> getVikingArmy() {
         return vikingArmy;
     }
 
-    public void setVikingArmy(ArrayList vikingArmy) {
+    public void setVikingArmy(ArrayList<Vikings> vikingArmy) {
         this.vikingArmy = vikingArmy;
     }
 
-    public ArrayList getSaxonArmy() {
+    public ArrayList<Saxon> getSaxonArmy() {
         return saxonArmy;
     }
 
-    public void setSaxonArmy(ArrayList saxonArmy) {
+    public void setSaxonArmy(ArrayList<Saxon> saxonArmy) {
         this.saxonArmy = saxonArmy;
+    }
+
+    public void addViking(Vikings vikings){
+
+    }
+
+    public void addSaxon(Saxon saxon){
+
+    }
+
+    public void vikingAttack(){
+
     }
 }
