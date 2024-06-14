@@ -14,21 +14,21 @@ class WarTest {
     int strength = 150;
     int health = 300;
 
-//    Saxon saxon = new Saxon(health, strength);
-//    Viking viking = new Viking(name, health, strength);
-//
-//    War war = new War();
-//
-//    @Test
-//    public void should_receive_0_arguments() {
-//        assertNotNull(war);
-//    }
-//
-//    @Test
-//    public void should_assign_an_empty_array_to_the_vikingArmy_property() {
-//        List<Viking> vikingArmy = war.getVikingArmy();
-//        assertTrue(vikingArmy.isEmpty());
-//    }
+    Saxon saxon = new Saxon(health, strength);
+    Vikings viking = new Vikings(name, health, strength);
+
+    War war = new War();
+
+    @Test
+    public void should_receive_0_arguments() {
+        assertNotNull(war);
+    }
+
+    @Test
+    public void should_assign_an_empty_array_to_the_vikingArmy_property() {
+        List<Vikings> vikingArmy = war.getVikingArmy();
+        assertTrue(vikingArmy.isEmpty());
+    }
 //
 //    @Test
 //    public void should_assign_an_empty_array_to_the_saxonArmy_property() {
