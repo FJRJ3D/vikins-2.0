@@ -34,6 +34,7 @@ public class War {
     }
 
     public void vikingAttack(){
-
+        
     }
+
 }
