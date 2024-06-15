@@ -6,6 +6,9 @@ import org.example.vikins.Vikings;
 import java.util.ArrayList;
 
 public class War {
+    Saxon saxon = new Saxon(60, 25);
+    Vikings vikings = new Vikings("Harald", 300, 150);
+
     private ArrayList<Vikings> vikingArmy = new ArrayList<>();
     private ArrayList<Saxon> saxonArmy = new ArrayList<>();
 
@@ -34,7 +37,11 @@ public class War {
     }
 
     public void vikingAttack(){
-        
+        saxon.receiveDamage(vikings.strength);
+        if (saxon.health<0){
+            saxonArmy.remove(saxon);
+        }
+        return;
     }
 
 }
