@@ -19,11 +19,12 @@ class VikingTest {
 
     @Test
     public void should_receive_3_arguments() {
+        Vikings viking = new Vikings(name, health, strength);
         assertNotNull(viking);
     }
 
     @Test
-    public void should_receive_the_health_property_as_its_1st_argument() {
+    public void should_receive_the_name_property_as_its_1st_argument() {
         assertEquals("Harald", viking.name);
     }
 
@@ -33,19 +34,18 @@ class VikingTest {
     }
 
     @Test
-    public void should_receive_the_health_property_as_its_3st_argument() {
+    public void should_receive_the_strength_property_as_its_3st_argument() {
         assertEquals(150, viking.strength);
     }
 
     @Test
-    public void attack_should_return_strength_property_of_the_Saxon() {
+    public void attack_should_return_strength_property_of_the_Viking() {
         int resultAttack = viking.attack();
         assertEquals(viking.strength, resultAttack);
     }
 
     @Test
     public void attack_should_receive_0_arguments() {
-        int damage = 50;
         int resultAttack = viking.attack();
         assertEquals(this.strength, resultAttack);
     }
@@ -76,7 +76,6 @@ class VikingTest {
 
     @Test
     public void battleCry_should_receive_0_arguments() {
-        String crying = "crying";
         String battleCry = viking.battleCry();
         assertEquals("Odin Owns You All!", battleCry);
     }

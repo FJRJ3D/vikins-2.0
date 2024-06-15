@@ -29,7 +29,7 @@ class SaxonTest {
     }
 
     @Test
-    public void should_receive_the_health_property_as_its_2st_argument() {
+    public void should_receive_the_strength_property_as_its_2st_argument() {
         Saxon saxon = new Saxon(health, strength);
         assertEquals(25, saxon.strength);
     }
@@ -44,7 +44,6 @@ class SaxonTest {
     @Test
     public void attack_should_receive_0_arguments() {
         Saxon saxon = new Saxon(health, strength);
-        int damage = 50;
         int resultAttack = saxon.attack();
         assertEquals(this.strength, resultAttack);
     }

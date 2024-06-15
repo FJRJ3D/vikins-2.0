@@ -21,7 +21,7 @@ class SoldierTest {
     }
 
     @Test
-    public void should_receive_the_health_property_as_its_2st_argument() {
+    public void should_receive_the_strength_property_as_its_2st_argument() {
         Soldier soldier = new Soldier(health, strength);
         assertEquals(150, soldier.strength);
     }
@@ -29,7 +29,6 @@ class SoldierTest {
     @Test
     public void attack_should_receive_0_arguments() {
         Soldier soldier = new Soldier(health, strength);
-        int damage = 50;
         int resultAttack = soldier.attack();
         assertEquals(this.strength, resultAttack);
     }
@@ -44,7 +43,7 @@ class SoldierTest {
     @Test
     public void attack_should_return_the_strength_property_of_the_Soldier() {
         Soldier soldier = new Soldier(health, strength);
-        var resultAttack = soldier.attack();
+        int resultAttack = soldier.attack();
         assertEquals(150, resultAttack);
     }
 
@@ -57,7 +56,7 @@ class SoldierTest {
 
     @Test
     public void should_remove_the_received_damage_from_the_health_property() {
-        var soldier = new Soldier(health, strength);
+        Soldier soldier = new Soldier(health, strength);
         soldier.receiveDamage(30);
         assertEquals(270, soldier.health);
     }

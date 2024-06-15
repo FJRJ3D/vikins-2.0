@@ -26,11 +26,11 @@ public class War {
     }
 
     public void addViking(Vikings vikings){
-
+        vikingArmy.add(vikings);
     }
 
     public void addSaxon(Saxon saxon){
-
+        saxonArmy.add(saxon);
     }
 
     public void vikingAttack(){
