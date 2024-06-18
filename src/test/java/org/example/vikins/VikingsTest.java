@@ -19,7 +19,6 @@ class VikingTest {
 
     @Test
     public void should_receive_3_arguments() {
-        Vikings viking = new Vikings(name, health, strength);
         assertNotNull(viking);
     }
 
